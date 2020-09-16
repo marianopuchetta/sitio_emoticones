@@ -1,0 +1,91 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+/* .radio_item{
+    display: none !important;
+    }
+
+    .label_item {
+    opacity: 0.5;
+    }
+    
+    .radio_item:checked + label {
+    opacity: 1;
+    }
+
+label {
+cursor: pointer;   
+} */
+.container{
+    height: 100%;
+    display: flex;
+}
+form{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+form div.pregunta{
+    background-color: rgba(0, 255, 255, 0.3);
+    width: 100%;
+    margin-top:5vh; 
+    margin-bottom:15vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+form div.pregunta .audio{
+    margin-top:5vh;
+}
+form div.pregunta .btn-group-toggle{
+    padding:5vh;
+    margin:10vh;
+    display:flex;
+    justify-content: center;
+}
+form div.pregunta .btn-group-toggle .btn{
+    padding:5vh;
+    margin:10vh;
+    display:flex;
+    justify-content: center;
+}
+form .button{
+    padding:5vh;
+    margin:5vh;
+    display:flex;
+    justify-content: center;
+}
+form .button .btn{
+    font-size:10vh;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: #fff;
+  border: .05rem solid #fff;
+}
+i{
+    font-size: 15vh;
+    color: yellow;
+}
+@media only screen and (max-width: 768px){
+    
+    form div.pregunta{
+        display: flex;
+        justify-content: center;
+        width: 75%;
+    }
+    form div.pregunta .btn-group-toggle .btn{
+        padding:5vh;
+        margin:5vh;
+    }
+    form .button{ 
+        width: 70%;
+        justify-content: center;
+    }
+}
