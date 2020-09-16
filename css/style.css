@@ -57,7 +57,7 @@ form .button{
     display:flex;
     justify-content: center;
 }
-form .button .btn{
+form .button .button_enviar{
     font-size:10vh;
 }
 
@@ -91,7 +91,7 @@ i{
         text-align: center;
     }
     h1{
-        font-size: 3em;
+        font-size: 2.5em;
     }
     form div.pregunta .audio{
         margin-top:2vh;
@@ -101,6 +101,11 @@ i{
         margin:5vh;
         flex-direction: column;
     }
+    form div.pregunta .btn-group-toggle label.btn{
+        margin-top: 0%;
+        margin-bottom: 1%;
+        
+    }
     form div.pregunta .btn-group-toggle .btn{
         padding:5vh;
         margin:10vh;
@@ -108,14 +113,15 @@ i{
         justify-content: center;
     }
     form .button{
-        padding:5vh;
-        margin:5vh;
-        display:flex;
-        justify-content: center;
+        margin-top: 0%;
+        padding-top: 0%;
     }
-    form .button .btn{
+    form .button .button_enviar{
         font-size:10vh;
+        margin-top: 0%;
+        padding-top: 0%;
     }
+    
     i{
         font-size: 7vh;
         color: rgba(255, 255, 0, 0.7);
