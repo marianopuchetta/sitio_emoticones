@@ -29,7 +29,6 @@ form{
 }
 form div.pregunta{
     background-color: rgba(0, 255, 255, 0.3);
-    width: 100%;
     margin-top:5vh; 
     margin-bottom:15vh;
     display:flex;
@@ -73,19 +72,52 @@ i{
     font-size: 15vh;
     color: yellow;
 }
-@media only screen and (max-width: 576px){
-    
-    form div.pregunta{
+@media only screen and (max-width: 768px){
+    .container{
+        height: 75%;
         display: flex;
+    }
+    form{
+        display:flex;
+        flex-direction: column;
         justify-content: center;
-        width: 75%;
+    }
+    form div.pregunta{
+        margin-top:5vh; 
+        margin-bottom:10vh;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    h1{
+        font-size: 3em;
+    }
+    form div.pregunta .audio{
+        margin-top:2vh;
+    }
+    form div.pregunta .btn-group-toggle{
+        padding:1vh;
+        margin:5vh;
+        flex-direction: column;
     }
     form div.pregunta .btn-group-toggle .btn{
         padding:5vh;
-        margin:5vh;
-    }
-    form .button{ 
-        width: 70%;
+        margin:10vh;
+        display:flex;
         justify-content: center;
+    }
+    form .button{
+        padding:5vh;
+        margin:5vh;
+        display:flex;
+        justify-content: center;
+    }
+    form .button .btn{
+        font-size:10vh;
+    }
+    i{
+        font-size: 7vh;
+        color: rgba(255, 255, 0, 0.7);
     }
 }
